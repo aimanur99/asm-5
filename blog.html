@@ -11,11 +11,10 @@
      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        .font-family{
+        .font{
             font-family: "Lexend", sans-serif;
         }
-        .nav-ber{
-        
+        .nav-container{
         position: sticky;
         top: 0;
         left: 0;
@@ -31,7 +30,22 @@
         }
     </style>
 </head>
-<body>
-    
+<body class="font">
+    <header>
+        <nav class="flex justify-between px-20 pb-20 pt-3 bg-slate-100 nav-container">
+            <div>
+                <button id="home-btn" class=" btn btn-sm" style = "background-color: #B4F461;">Home</button>
+            </div>
+            <div class="flex gap-x-2">
+                <img src="assets/logo.png" alt="">
+                <h3 class="flex items-center text-2xl font-bold">Donate Bangladesh</h3>
+            </div>
+            <div class="flex gap-x-2">
+                <img class="w-8 h-8" src="assets/coin.png" alt="">
+                <span id="top-amount" class="text-2xl font-bold">5500</span>
+                <p class="text-2xl font-bold">BDT</p>
+            </div>
+        </nav>
+    </header>
 </body>
 </html>
