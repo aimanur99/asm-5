@@ -66,7 +66,7 @@ document.getElementById('btn-feni').addEventListener('click',function(){
 
 })
 
-//Quota
+//Aid for Quota Movement
 document.getElementById('btn-quota').addEventListener('click',function(){
     const donateQuota = document.getElementById('donate-quota').value;
     const donateNumber = Number(donateQuota)
@@ -102,26 +102,26 @@ document.getElementById('btn-quota').addEventListener('click',function(){
     
 })
 
-//button formula
+//button section formula
 
-document.getElementById('history-btn').addEventListener('click',function(){
-    document.getElementById('history-btn').classList.add('btn-donation');
-    document.getElementById('donation-btn').classList.remove('btn-donation');
-    document.getElementById('noakhali-section').classList.add('hidden');
-    document.getElementById('noakhali-section').classList.remove('lg:flex');
-    document.getElementById('feni-section').classList.add('hidden');
-    document.getElementById('quota-section').classList.add('hidden');
-    document.getElementById('history-section').classList.remove('hidden');
-})
+// document.getElementById('history-btn').addEventListener('click',function(){
+//     document.getElementById('history-btn').classList.add('btn-donation');
+//     document.getElementById('donation-btn').classList.remove('btn-donation');
+//     document.getElementById('noakhali-section').classList.add('hidden');
+//     document.getElementById('noakhali-section').classList.remove('lg:flex');
+//     document.getElementById('feni-section').classList.add('hidden');
+//     document.getElementById('quota-section').classList.add('hidden');
+//     document.getElementById('history-section').classList.remove('hidden');
+// })
 
-document.getElementById('donation-btn').addEventListener('click',function(){
-    const historyButton= document.getElementById('history-btn').classList.remove('btn-donation');
-    const donationButton = document.getElementById('donation-btn').classList.add('btn-donation');
-    const noakhaliSection = document.getElementById('noakhali-section').classList.remove('hidden');
-    const feniSection = document.getElementById('feni-section').classList.remove('hidden');
-    const quotaSection = document.getElementById('quota-section').classList.remove('hidden') ;
-    const historySection = document.getElementById('history-section').classList.add('hidden');
-})
+// document.getElementById('donation-btn').addEventListener('click',function(){
+//     const historyButton= document.getElementById('history-btn').classList.remove('btn-donation');
+//     const donationButton = document.getElementById('donation-btn').classList.add('btn-donation');
+//     const noakhaliSection = document.getElementById('noakhali-section').classList.remove('hidden');
+//     const feniSection = document.getElementById('feni-section').classList.remove('hidden');
+//     const quotaSection = document.getElementById('quota-section').classList.remove('hidden') ;
+//     const historySection = document.getElementById('history-section').classList.add('hidden');
+// })
 
 //
 // button toggle end----->
@@ -132,6 +132,6 @@ document.getElementById('blog-btn').addEventListener('click',function(){
 })
 
 // home button start ------>
-// document.getElementById('home-btn').addEventListener('click',function(){
-//     window.location.href='./blog.html'
-// })
+document.getElementById('home-btn').addEventListener('click',function(){
+    window.location.href='./home.html'
+})
