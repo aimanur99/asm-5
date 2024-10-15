@@ -40,7 +40,7 @@
         <!-- start nav section -->
         <nav class="flex justify-between px-20 pb-20 pt-3 bg-slate-100 backdrop-blur-3xl">
             <div>
-                <button id="blog-btn" class=" btn btn-sm" style="background-color: #B4F461;">Blog</button>
+                <button id="blog-btn" class=" btn btn-xl" style="background-color: #B4F461;">Blog</button>
             </div>
             <div class="flex gap-x-2">
                 <img src="assets/logo.png" alt="">
@@ -59,6 +59,119 @@
             <button id="history-btn" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">History</button>
         </div>
     </header>
+    <main>
+        <!-- Start noakhali setion here -->
+        <div id="noakhali-section" class="flex justify-center mb-8">
+          <div class="card card-side bg-base-100 shadow-xl w-11/12 ">
+            <div class="w-1/2">
+              <img class="p-5" src="assets/noakhali.png" />
+            </div>
+            <div class="w-1/2 card-body">
+              <div class="lg:flex justify-center bg-slate-100 w-28 rounded-lg">
+                <img src="assets/coin.png" alt="">
+                <span id="amount-noakhali">0</span>
+                <p>BDT</p>
+              </div>
+              <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
+              <p> The recent floods in Noakhali have caused significant damage to homes infrastructure.
+                Your donation will help provide essential supplies and to those affected by this disaster.
+                Every contribution, big or small, makes difference. Please join us in supporting the relief
+                efforts and making a positive impact on the lives of those in need.</p>
+              <div>
+                <input id="donate-noakhali" type="text" placeholder="input donation amount"
+                  class="input input-bordered w-11/12">
+              </div>
+              <div>
+                <p id="input-error" class="hidden text-red-500">input error</p>
+              </div>
+              <div class="card-actions">
+                <button id="btn-noakhali" class="btn btn-wide w-11/12" style="background-color: #B4F461;">Donate
+                  Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Start feni donation here -->
+        <div id="feni-section" class="flex justify-center mb-8">
+          <div class="card card-side bg-base-100 shadow-xl w-11/12">
+            <div class="w-1/2">
+              <img class="p-5" src="assets/feni.png" />
+            </div>
+            <div class="w-1/2 card-body">
+              <div class="flex justify-center bg-slate-100 w-28 rounded-lg">
+                <img src="assets/coin.png" alt="">
+                <span id="amount-feni">0</span>
+                <p>BDT</p>
+              </div>
+              <h2 class="card-title">Donate for Flood Relief in Feni,Bangladesh</h2>
+              <p>
+                The recent floods in Feni have devastated local communities, leading to severe disruption and loss.
+                Your generous donation will help provide immediate aid, including food, clean water,
+                and medical supplies, to those affected by this calamity. Together,
+                we can offer crucial support and help rebuild lives in the aftermath of this disaster.
+                Every contribution counts towards making a real difference. Please consider donating today
+                to assist those in urgent need.
+              </p>
+              <div>
+                <input id="donate-feni" type="text" placeholder="input donation amount" class="input input-bordered w-11/12">
+              </div>
+              <div>
+                <p id="input2-error" class="hidden text-red-500">input error</p>
+              </div>
+              <div class="card-actions">
+                <button id="btn-feni" class="btn btn-wide w-11/12" style="background-color: #B4F461;">Donate Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- add third card -->
+        <div id="quota-section" class="flex justify-center">
+          <div class="card card-side bg-base-100 shadow-xl w-11/12">
+            <div class="w-1/2">
+              <img class="p-5" src="assets/quota-protest.png" />
+            </div>
+            <div class="w-1/2 card-body">
+              <div class="flex justify-center bg-slate-100 w-28 rounded-lg">
+                <img src="assets/coin.png" alt="">
+                <span id="amount-quota">0</span>
+                <p>BDT</p>
+              </div>
+              <h2 class="card-title">Aid for Injured in the Quota Movement</h2>
+              <p>
+                The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals.
+                Your support is crucial in providing medical assistance, rehabilitation,
+                and necessary supplies to those affected. By contributing, you help ensure that injured individuals
+                receive the care and support they need during this challenging time. Every donation plays a vital role in
+                alleviating their suffering and aiding in their recovery. Please consider making a donation to support
+                these brave individuals in their time of need.
+              </p>
+              <div>
+                <input id="donate-quota" type="text" placeholder="input donation amount"
+                  class="input input-bordered w-11/12">
+              </div>
+              <div>
+                <p id="input3-error" class="hidden text-red-500">input error</p>
+              </div>
+              <div class="card-actions">
+                <button id="btn-quota" class="btn btn-wide w-11/12" style="background-color: #B4F461;">Donate Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- history section  -->
+        <div id="history-section" class="hidden">
+          <div id="history-noakhali" class="border mx-10 p-4 text-center">
+          </div>
+          <br>
+          <div id="history-feni" class="border mx-10 p-4 text-center">
+          </div>
+          <br>
+          <div id="history-quota" class="border mx-10 p-4 text-center">
+          </div>
+        </div>
+      </main>
 </body>
+<script src="./js code/donate.js"></script>
 
 </html>
