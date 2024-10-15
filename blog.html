@@ -35,7 +35,7 @@
 </head>
 
 <body class="font">
-  <header>
+  <header class="nav-container">
     <nav class="flex justify-between px-20 pb-20 pt-3 bg-slate-100 nav-container">
       <div>
         <button id="home-btn" class=" btn btn-lg" style="background-color: #B4F461;">Home</button>
@@ -66,11 +66,14 @@
       <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
       <div class="collapse-content">
         <p>To select an element from the DOM without showing JavaScript code, we would:
-
+          <br>
+          <br>
           1. Identify the element: Each element in a webpage has unique identifiers such as id, class, tag name, etc.
+          <br>
 
           2. Choose a selection method: Use methods like selecting by id, class, or tag. id is unique for an element,
           while class can apply to multiple elements.
+          <br>
 
           3. Manipulate the selected element: Once selected, we can perform actions like retrieving or modifying its
           content (e.g., text, HTML, attributes).</p>
@@ -84,12 +87,17 @@
         <p>Event delegation is a technique in the DOM where a single event listener is attached to a parent element,
           allowing it to manage events from its child elements. Instead of attaching multiple event listeners to each
           child, the parent captures events that bubble up from them.
+          <br>
+          <br>
           Why it's useful:
-
+          <br>
+          <br>
           1. Efficiency: Reduces the number of event listeners, which can improve performance, especially with many
           elements.
+          <br>
           2. Dynamic elements: Handles events on dynamically added child elements, since the parent remains the event
           handler, even for future child nodes.
+          <br>
           3. Simplified code: It centralizes event handling, making the code easier to maintain and less repetitive.
         </p>
       </div>
@@ -99,9 +107,10 @@
       <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
       <div class="collapse-content">
         <p>To manipulate an element's attributes and styles using the DOM, we can use the following methods:
-
+          <br>
+          <br>
           1. Attributes: getAttribute() is used to read the value of an attribute, while setAttribute() allow to change or add a new attribute.
-        
+          <br>
         2. Styles: Styles can also be manipulated by adding, removing, or toggling CSS classes using classList methods like add(), remove(), and toggle().</p>
       </div>
     </div>
@@ -112,5 +121,4 @@
     window.history.back()
   })
 </script>
-
 </html>
