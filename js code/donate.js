@@ -105,7 +105,7 @@ document.getElementById('btn-quota').addEventListener('click',function(){
 //button section formula
 
 document.getElementById('history-btn').addEventListener('click',function(){
-    document.getElementById('history-btn').classList.add('btn-donation');
+    document.getElementById('history-btn').classList.add('btn-history');
     document.getElementById('donation-btn').classList.remove('btn-donation');
     document.getElementById('noakhali-section').classList.add('hidden');
     document.getElementById('noakhali-section').classList.remove('lg:flex');
@@ -115,7 +115,7 @@ document.getElementById('history-btn').addEventListener('click',function(){
 })
 
 document.getElementById('donation-btn').addEventListener('click',function(){
-    const historyButton= document.getElementById('history-btn').classList.remove('btn-donation');
+    const historyButton= document.getElementById('history-btn').classList.remove('btn-history');
     const donationButton = document.getElementById('donation-btn').classList.add('btn-donation');
     const noakhaliSection = document.getElementById('noakhali-section').classList.remove('hidden');
     const feniSection = document.getElementById('feni-section').classList.remove('hidden');
